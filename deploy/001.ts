@@ -1,0 +1,3 @@
+No need to generate any newer typings.
+assetStore 0x643fbCe6d2280B3eA2b2d3277A30dae61F8c3478
+materialToken 0x469502c775a06A925Da905eE7736bF8317a1cBB1
