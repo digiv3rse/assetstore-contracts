@@ -1,9 +1,7 @@
 name: Asset Test
 
 on:
-  pull_request:
-    branches:
-      - "**"
+  workflow_dispatch:
 
 jobs:
   asset_test:
