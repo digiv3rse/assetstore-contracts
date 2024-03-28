@@ -1,0 +1,283 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AssetStoreCore",
+  "sourceName": "contracts/AssetStore.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "AssetRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "group",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "category",
+          "type": "string"
+        }
+      ],
+      "name": "CategoryAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "group",
+          "type": "string"
+        }
+      ],
+      "name": "GroupAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "decoder",
+      "outputs": [
+        {
+          "internalType": "contract IPathDecoder",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAssetCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "group",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "minter",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "soulbound",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "metadata",
+              "type": "bytes"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bytes",
+                  "name": "body",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "string",
+                  "name": "color",
+                  "type": "string"
+                }
+              ],
+              "internalType": "struct IAssetStoreRegistry.Part[]",
+              "name": "parts",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct IAssetStoreRegistry.AssetInfo",
+          "name": "_assetInfo",
+          "type": "tuple"
+        }
+      ],
+      "name": "registerAsset",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "group",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "minter",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "soulbound",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "metadata",
+              "type": "bytes"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bytes",
+                  "name": "body",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "string",
+                  "name": "color",
+                  "type": "string"
+                }
+              ],
+              "internalType": "struct IAssetStoreRegistry.Part[]",
+              "name": "parts",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct IAssetStoreRegistry.AssetInfo[]",
+          "name": "_assetInfos",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "registerAssets",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "validator",
+      "outputs": [
+        {
+          "internalType": "contract IStringValidator",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

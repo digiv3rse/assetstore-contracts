@@ -1,0 +1,141 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAssetProviderRegistry",
+  "sourceName": "contracts/interfaces/IAssetProviderRegistry.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_providerId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ProviderRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_providerId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ProviderUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_providerId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getProvider",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "contract IAssetProvider",
+              "name": "provider",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IAssetProvider.ProviderInfo",
+          "name": "",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_key",
+          "type": "string"
+        }
+      ],
+      "name": "getProviderId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "providerCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IAssetProvider",
+          "name": "_provider",
+          "type": "address"
+        }
+      ],
+      "name": "registerProvider",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

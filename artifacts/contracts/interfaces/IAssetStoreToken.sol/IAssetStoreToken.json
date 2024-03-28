@@ -1,0 +1,72 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAssetStoreToken",
+  "sourceName": "contracts/interfaces/IAssetStoreToken.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "assetIdOfToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_svgPart",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_style",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_tag",
+          "type": "string"
+        }
+      ],
+      "name": "generateSVG",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "styles",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

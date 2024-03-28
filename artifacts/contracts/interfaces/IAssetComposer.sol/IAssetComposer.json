@@ -1,0 +1,76 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAssetComposer",
+  "sourceName": "contracts/interfaces/IAssetComposer.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "compositionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "CompositionRegistered",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "assetId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "provider",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "fill",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "transform",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stroke",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IAssetComposer.AssetLayer[]",
+          "name": "_layers",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "registerComposition",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
