@@ -1,6 +1,6 @@
-const assetStore = "0xF1075f20fB9457cF5B64d8AE94AecF05AFAA3071";
-const developer = "0x6a615Ca8D7053c0A0De2d11CACB6f321CA63BD62"; // sn2
-const proxy = "0xa5409ec958c83c3f309868babaca7c86dcb077c1";
+const assetStore = "0x289523B23c36fC78Bc2169821a007174a3941D37";
+const developer = "0xd53B6196F526b2cf0a5F3a35a03B23B2D02b26c4"; // sn2
+const proxy = "0xA13Be398C4846Fff60386AbF3fE88080dDac962b";
 
 module.exports = [
   assetStore, assetStore, developer, proxy

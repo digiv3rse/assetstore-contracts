@@ -16,9 +16,8 @@ const waitForUserInput = (text: string) => {
 };
 
 async function main() {
-  const { assetStore, materialToken } = await deploy();
-  console.log(`      storeAddress="${assetStore.address}"`);
-  console.log(`      tokenAddress="${materialToken.address}"`);
+  const storeAddress = "0x289523B23c36fC78Bc2169821a007174a3941D37";
+  const tokenAddress = "0x8135b2E5a989D6FE6661CFc6634ab4ff2402Ca14";
 
   const [owner] = await ethers.getSigners();
   const unitPrice = ethers.BigNumber.from(55);
